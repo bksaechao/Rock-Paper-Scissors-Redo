@@ -54,7 +54,7 @@ function displayCpuChoice() {
         '<img class="rps-image" id="rock-image" src="images/rock.jpeg" alt ="rock"> <img class="rps-image" id="rock-image" src="images/rock.jpeg" alt ="rock">'
         document.getElementById("title-message").innerText = "It's a Tie!"
         tie++
-    }
+    } else { }
     // paper match-up
     if (userChoice === "paper-image" && cpuChoice === 0) {
         document.getElementById("rps-select").innerHTML = 
@@ -71,7 +71,7 @@ function displayCpuChoice() {
         '<img class="rps-image" id="paper-image" src="images/paper.jpeg" alt ="paper"> <img class="rps-image" id="paper-image" src="images/paper.jpeg" alt ="paper">'
         document.getElementById("title-message").innerText = "It's a Tie!"
         tie++
-    }
+    } else { }
     // scissor match-up
     if (userChoice === "scissor-image" && cpuChoice === 0) {
         document.getElementById("rps-select").innerHTML = 
@@ -88,7 +88,7 @@ function displayCpuChoice() {
         '<img class="rps-image" id="scissor-image" src="images/scissors.jpeg" alt ="scissors"> <img class="rps-image" id="scissor-image" src="images/scissors.jpeg" alt ="scissors">'
         document.getElementById("title-message").innerText = "It's a Tie!"
         tie++
-    }
+    } else { }
 }
 
 // Calculate & update scoreboard
@@ -103,6 +103,8 @@ function reset() {
     document.getElementById("rps-select").innerHTML = 
     '<img class="rps-image" id="rock-image" src="images/rock.jpeg" alt ="rock"><img class="rps-image" id="paper-image" src="images/paper.jpeg" alt ="paper"><img class="rps-image" id="scissor-image" src="images/scissors.jpeg" alt ="scissors">'
     document.getElementById("title-message").innerText = "ROCK PAPER SCISSORS!"
+    userChoice = "";
+    delete cpuChoice;
 }
 
 // Game starts on click
@@ -114,6 +116,8 @@ function gameStart() {
             console.clear();
             cpuGame();
             clearPicks();
+        } else {
+            return false;
         }
         showScore();
         displayUserChoice();
