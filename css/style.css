@@ -1,0 +1,78 @@
+/* General */
+header {
+    background-color: darkseagreen;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+div header {
+    border-radius: initial;
+}
+
+h1 {
+    color:#ffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 98px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Rock Paper Scissor Select Section */
+#rps-select {
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.rps-image {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+}
+
+.rps-image:hover {
+    opacity: 0.5;
+    border: 1px solid rgb(223, 150, 77);
+    border-radius: 1rem;
+}
+
+.rps-image:active {
+    border: 1px solid darkseagreen;
+    opacity: initial;
+}
+
+/* Score Board */
+#score-board {
+    border: 3px solid darkseagreen;
+    border-radius: 1rem;
+    height: 350px;
+    padding: 15px;
+}
+
+.win,
+.lose,
+.tie {
+    width: 30%;
+    float: left;
+}
+
+.win,
+.lose {
+    margin-right: 48px;
+}
+
+.score {
+    color: darkseagreen;
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    line-height: 70px;
+}

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="title-message">ROCK PAPER SCISSORS!</h1>
+        </div>
+    </header>
+    <section class="game-section">
+        <div id="rps-select">
+            <img class="rps-image" id="rock-image" src="images/rock.jpeg" alt ="rock">
+            <img class="rps-image" id="paper-image" src="images/paper.jpeg" alt ="paper">
+            <img class="rps-image" id="scissor-image" src="images/scissors.jpeg" alt ="scissors">
+        </div>
+        <div class="container" id="score-board">
+            <div class="win">
+                <header>
+                    <h2>Win</h2>
+                </header>
+                <h1 class="score" id="win-score"></h1>
+            </div>
+            <div class="lose">
+            <header>
+                <h2>Lose</h2>
+            </header>
+            <h1 class="score" id="lose-score"></h1>
+            </div>
+            <div class="tie">
+                <header>
+                    <h2>Tie</h2>
+                </header>
+                <h1 class="score" id="tie-score"></h1>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="javascript/game.js"></script>
+</body>
+</html>
