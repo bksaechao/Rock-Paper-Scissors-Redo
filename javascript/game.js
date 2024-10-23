@@ -124,6 +124,6 @@ function gameStart() {
 }
 
 gameStart();
-
+console.log("Hello");
 
 
