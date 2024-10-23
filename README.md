@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors-Redo
-<p>Moving on from html/css this is a re-do of the first major javascript project that was previously completed during class a few years ago.
+<p>Moving on from html/css to javascript, the goal of this task was to revisit the first major javascript project that was previously completed during class a few years ago.
 
 <a href="https://bksaechao.github.io/Rock-Paper-Scissors-Redo/">View Project Here
 
